@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Crystal Collector</title>
+    
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <h1>The Crystal Collector</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <section class="row instructions">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>To begin, the computer will choose a random number goal.</li>
+                    <li>The four crystals below will have a random fixed value associated with them for each round of the game.</li>
+                    <li>When you click the crystal the value assigned will be added to the total.</li>
+                    <li>Keep in mind that the values associated with the crystal are hidden from you, until you click on each crystal.</li>
+                    <li>Make note of the values by watching how much the total increases.</li>
+                    <li>If the total values of your clicks are equal to the random computer guess, you win. </li>
+                    <li>If the total value of your clicks exceeds random computer guess, you lose.</li>
+                    <li>NOTE: The crystals assigned value resets everytime the game restarts.</li>
+                </ul>
+            </section>
+            <section class="row stats">
+                <section>
+                    <div class="col-xs-1 match">
+                        <p>Match: </p>
+                    </div>
+                    <div class="col-xs-1 randomNumber">
+                    </div>
+                    <div class=" col-xs-1 gameStatistics">
+                        <p id="won">Won: </p>
+                        <p id="lost">Lost: </p>
+                    </div>
+                </section>
+            </section>
+            <section class="row">
+            <br>
+                <img id="stone1" src="assets/images/crystal_1.png" class="image">
+                <img id="stone2" src="assets/images/crystal_2.png" class="image">
+                <img id="stone3" src="assets/images/crystal_3.png" class="image">
+                <img id="stone4" src="assets/images/crystal_4.png" class="image">
+            </section>
+            <br>
+            <section class="row" id="score">
+            </section>
+        </div>
+        <div class="col-xs-3">
+            <p id="winn"></p>
+        </div>
+    </div>
+    <div class="col-xs-4"></div>
+
+    <script type="text/javascript" src="assets/game_logic.js"></script>
+
+</body>
+
+</html>
